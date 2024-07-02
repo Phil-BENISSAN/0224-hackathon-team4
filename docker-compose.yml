@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  # SERVICE DASH
+  dash:
+    build: ./data-dash
+    ports:
+      - "8050:8050"
+
+  # SERVICE FASTAPI 
+  fastapi:
+    build: ./data-fastapi
+    ports:
+      - "8000:8000"
+
+  # SERVICE STREAMLIT 
+  streamlit:
+    build: ./data-streamlit
+    ports:
+      - "8501:8501"
+
+  # SERVICE REACT    
+  react:
+    build: ./dev-react
+    ports:
+      - 8080:8080
+    environment:
+      NODE_ENV: development      
