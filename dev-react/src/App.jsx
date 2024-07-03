@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <Outlet/>
+    <Outlet />
      <h1 className=' text-rose-600'>HELLO WORLD</h1>
     </>
   );
