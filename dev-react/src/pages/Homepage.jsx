@@ -1,11 +1,15 @@
 import Cards from "../components/Cards";
 import MapComponent from "../components/MapComponent";
 
-
 function Homepage() {
   return <main>
+    <section>
    <MapComponent />
-   <section className="flex flex-col items-center">
+   </section>
+   <section className="flex flex-col items-center z-index bottom-10">
+  <Cards/>
+  <Cards/>
+  <Cards/>
   <Cards/>
   </section>
   </main>
