@@ -6,6 +6,7 @@ import facebook from "../assets/images/facebook.svg";
 
 export const Footer = () => {
   return (
+    <div className="flex h-[100vh] flex-col">
     <footer className="footer">
       <img src={logo} alt="" className="logo"/>
       <div className="container-footer-logos">
@@ -15,5 +16,6 @@ export const Footer = () => {
       </div>
       <p>Mention légales</p>
     </footer>
+    </div>
   );
 };
