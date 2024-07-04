@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 import fluid, { extract } from "fluid-tailwind";
-import plugin from "tailwindcss/plugin";
 
 export default {
   content: {
@@ -11,12 +10,9 @@ export default {
     extend: {
       colors: {
         "primary-color": "#553eae",
-        "primary-dark": "#b44dfe",
-        "primary-light": "#f2e2fe",
         "secondary-color": "#FFECEC",
-        "light-color": "#fdfdfd",
-        "dark-color": "#353535",
         "bg-blue" : "#553EAE",
+        "bg-grey" : "#E6E8E7"
       },
       boxShadow: {
         "custom-shadow": "15px 15px 0px 0px var(--primaryColor)",
@@ -25,11 +21,6 @@ export default {
   },
   plugins: [
     fluid,
-    plugin(({ addComponents }) => {
-      const components = {
-        
-      };
-      addComponents(components);
-    }),
+
   ],
 };

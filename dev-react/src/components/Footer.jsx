@@ -6,7 +6,7 @@ import facebook from "../assets/images/facebook.svg";
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <img src={logo} alt="" className="logo"/>
       <div className="container-footer-logos">
         <img src={insta} alt="" className="svg-logo" />
