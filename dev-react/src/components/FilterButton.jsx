@@ -1,6 +1,6 @@
 function FilterButton({ handleClickNeed, handleClickShop, activeTab }) {
   return (
-    <div className="flex justify-evenly items-center my-5">
+    <div className="flex justify-evenly items-center mt-5">
       <button
         type="button"
         className={`border-2 border-primary-color rounded-md p-1 font-semibold w-32 ${

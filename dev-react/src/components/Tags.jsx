@@ -1,40 +1,42 @@
-import img1 from "../assets/images/img1.svg";
-import img2 from "../assets/images/img2.svg";
-import img3 from "../assets/images/old2.svg";
-import img4 from "../assets/images/physical-disability-01.svg";
-import img5 from "../assets/images/img3.svg";
+import React from "react";
+import noEar from "../assets/images/img1.svg";
+import noVue from "../assets/images/img2.svg";
+import vieux from "../assets/images/old2.svg";
+import fauteuil from "../assets/images/physical-disability-01.svg";
+import signe from "../assets/images/img3.svg";
 
 const stepTags = [
   {
     title: "Difficulté à entendre",
-    imgSrc: img1,
+    imgSrc: noEar,
   },
   {
     title: "Difficulté à voir",
-    imgSrc: img2,
+    imgSrc: noVue,
   },
   {
     title: "Difficulté à marcher",
-    imgSrc: img3,
+    imgSrc: vieux,
   },
   {
     title: "En fauteuil roulant",
-    imgSrc: img4,
+    imgSrc: fauteuil,
   },
   {
     title: "Difficulté à comprendre",
-    imgSrc: img5,
+    imgSrc: signe,
   },
 ];
 
-function Tags() {
+function Tags({ handleTagClick }) {
   return (
     <div className="flex flex-wrap justify-center items-center m-2">
       {stepTags.map((info, index) => (
         <button
-        key={index}
+          key={index}
           type="button"
-          className=" flex justify-center items-center rounded-md p-1 text-primary-color font-semibold m-2 focus:bg focus:bg-bg-pink shadow-box gap-1"
+          className="flex justify-center items-center rounded-md p-1 text-primary-color font-semibold m-2 focus:bg focus:bg-bg-pink shadow-box gap-1"
+          onClick={() => handleTagClick(info.title)}
         >
           <img src={info.imgSrc} alt={info.title} />
           {info.title}

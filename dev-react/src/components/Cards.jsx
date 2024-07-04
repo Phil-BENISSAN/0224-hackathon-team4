@@ -10,7 +10,7 @@ function Cards({item}) {
 
 
   return (
-    <article className="flex w-[22rem] h-[10rem] m-5 rounded-2xl gap-3 shadow-lg items-center mb-1">
+    <article className="flex w-[22rem] h-[10rem] m-5 rounded-2xl gap-3 shadow-box items-center mb-1">
             <img src={`${item.url_image}`} alt="test" className="w-32 h-32 rounded object-cover"/>
             <span className="flex flex-col gap-3">
               <div>
