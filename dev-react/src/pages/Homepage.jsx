@@ -7,8 +7,8 @@ function Homepage() {
     <main>
       <section>
         <MapComponent />
-        <SearchBar />
       </section>
+        <SearchBar />
       <section className="flex flex-col items-center bottom-10">
         <Cards />
         <Cards />
