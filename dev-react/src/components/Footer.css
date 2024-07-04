@@ -1,6 +1,5 @@
 footer {
   padding: 1rem;
-  position: fixed;
   bottom: 0;
   background-color: #fff;
   width: 100vw;
@@ -12,7 +11,7 @@ footer {
   align-items: center;
 }
 
-img {
+.logo {
   width: 10rem;
   height: 10rem;
 }

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 
-main {
+.introMain {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   display: flex;
@@ -15,17 +15,17 @@ main {
   min-height: 100vh;
   padding: 0 2rem;
 
-  & h1 {
+  & .introH1 {
     color: #ffffff;
     font-size: 28px;
     margin: 3rem auto;
 
-    & span {
+    & .introSpan {
       color: #feb8ba;
     }
   }
 
-  & h2 {
+  & .introH2 {
     color: #ffffff;
     font-size: 20px;
     text-align: center;
