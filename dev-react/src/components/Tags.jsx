@@ -30,8 +30,9 @@ const stepTags = [
 function Tags() {
   return (
     <div className="flex flex-wrap justify-center items-center m-2">
-      {stepTags.map((info) => (
+      {stepTags.map((info, index) => (
         <button
+        key={index}
           type="button"
           className=" flex justify-center items-center rounded-md p-1 text-primary-color font-semibold m-2 focus:bg focus:bg-bg-pink shadow-box gap-1"
         >

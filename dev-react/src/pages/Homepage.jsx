@@ -6,15 +6,14 @@ import SearchBar from "../components/SearchBar";
 import Tags from "../components/Tags";
 
 function Homepage() {
-  const [cardShop, setCardShop] = useState("");
-  const [tagNeed, setTagNeed] = useState("");
+  const [showCards, setShowCards] = useState(true);
 
   const handleClickShop = () => {
-    setCardShop(cardShop);
+    setShowCards(true);
   };
 
   const handleClickNeed = () => {
-    setTagNeed(tagNeed);
+    setShowCards(false);
   };
 
   return (
@@ -27,9 +26,9 @@ function Homepage() {
         handleClickNeed={handleClickNeed}
         handleClickShop={handleClickShop}
       />
-      <Tags />
+
       <section className="flex flex-col items-center bottom-10">
-        <Cards />
+        {showCards ? <Cards /> : <Tags />}
       </section>
     </main>
   );
