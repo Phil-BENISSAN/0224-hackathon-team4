@@ -48,7 +48,7 @@ export default function Slider() {
       {stepList.map((info) => (
         <SwiperSlide key={info.name}>
           <div className="flex flex-col justify-center items-center bg-bg-blue rounded-md my-4 w-80 h-96">
-            <h2>{info.title}</h2>
+            <h2 className="introH2">{info.title}</h2>
             <img
               src={info.imgSrc}
               alt={info.name}

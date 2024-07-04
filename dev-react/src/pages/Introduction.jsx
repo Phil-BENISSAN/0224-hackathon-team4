@@ -10,12 +10,12 @@ function Introduction() {
         <br /> Trouve des commerces <span>inclusifs</span> et{" "}
         <span className="introSpan">accessibles</span> en un instant
       </h1>
-      <h2>Comment ça marche ?</h2>
+      <h2 className="introH2">Comment ça marche ?</h2>
       <div className="flex justify-center items-center">
         <Slider />
       </div>
 
-      <Link to="/home" className="start-link">
+      <Link to="/home" className="start-link mb-20 mt-4">
         Commencer
       </Link>
     </main>
