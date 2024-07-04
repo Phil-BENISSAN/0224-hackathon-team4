@@ -17,6 +17,7 @@ export default {
         "light-color": "#fdfdfd",
         "dark-color": "#353535",
         "bg-blue" : "#553EAE",
+        "bg-grey" : "#E6E8E7",
       },
       boxShadow: {
         "custom-shadow": "15px 15px 0px 0px var(--primaryColor)",
