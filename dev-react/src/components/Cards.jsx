@@ -12,6 +12,7 @@ function Cards({item}) {
               <div>
             <h2 className="text-lg text-primary-color font-medium overflow-hidden object-cover w-32">{item.name}</h2>
             </div>
+            <h2> {item.activite} </h2>
             <h3 className="text-sm text-primary-color">{item.adresse}</h3>
             <span className="flex gap-5">
                 <img src="./src/assets/images/NoEyes.svg"></img>
