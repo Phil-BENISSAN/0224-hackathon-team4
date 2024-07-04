@@ -10,15 +10,14 @@ import { useState } from "react";
 
 
 function Homepage() {
-  const [cardShop, setCardShop] = useState("");
-  const [tagNeed, setTagNeed] = useState("");
+  const [showCards, setShowCards] = useState(true);
 
   const handleClickShop = () => {
-    setCardShop(cardShop);
+    setShowCards(true);
   };
 
   const handleClickNeed = () => {
-    setTagNeed(tagNeed);
+    setShowCards(false);
   };
 
   const data = dataset.Sheet1 || [];
@@ -33,13 +32,14 @@ function Homepage() {
         handleClickNeed={handleClickNeed}
         handleClickShop={handleClickShop}
       />
-      <Tags />
-      <section className="flex flex-col items-center gap-5">
+      <section className="flex flex-col items-center bottom-10">
+      {showCards ? <section className="flex flex-col items-center gap-5">
         {limitedData.map((item) => (
           <Link to={`/shop/${item.id}`} key={item.id}>
             <Cards item={item} />
           </Link>
         ))}
+      </section> : <Tags />}
       </section>
       <Footer />
     </main>
