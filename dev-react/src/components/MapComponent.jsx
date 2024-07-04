@@ -24,7 +24,7 @@ L.Icon.Default.mergeOptions({
 const MapComponent = () => {
   const [position, setPosition] = useState([44.8694507, -0.565266]);
   const data = dataset.Sheet1 || [];
-  const limitedData = data.slice(0, 20);
+  const limitedData = data.slice(0, 50);
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {

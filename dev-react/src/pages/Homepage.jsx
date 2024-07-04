@@ -45,7 +45,7 @@ function Homepage() {
 
   return (
     <main>
-      <section className="pb-[65vh]">
+      <section className="pb-[60vh]">
         <MapComponent />
       </section>
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} handleSubmit={handleSubmit}/>
@@ -56,7 +56,7 @@ function Homepage() {
       />
       <section className="flex flex-col items-center bottom-10">
         {activeTab === 'shop' ? (
-          <section className="flex flex-col items-center gap-5">
+          <section className="flex flex-col items-center">
             {filteredData.map((item) => (
               <Link to={`/shop/${item.id}`} key={item.id}>
                 <Cards item={item} />
