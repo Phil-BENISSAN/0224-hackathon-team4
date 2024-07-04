@@ -1,6 +1,6 @@
 import "../components/Footer.css";
 import logo from "../assets/images/logoInclusifind.svg";
-import insta from "../assets/images/insta.svg";
+import insta from "../assets/images/Insta.svg";
 import tiktok from "../assets/images/tiktok.svg";
 import facebook from "../assets/images/facebook.svg";
 
