@@ -5,6 +5,7 @@
   font-weight: bold;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background: linear-gradient(
     #553fae 0%,
@@ -19,10 +20,10 @@
     color: #ffffff;
     font-size: 28px;
     margin: 3rem auto;
-
+  }
     & .introSpan {
       color: #feb8ba;
-    }
+    
   }
 
   & .introH2 {

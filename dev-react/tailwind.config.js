@@ -10,12 +10,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary-color": "#553EAE",
+        "primary-color": "#553eae",
         "primary-dark": "#b44dfe",
         "primary-light": "#f2e2fe",
         "secondary-color": "#FFECEC",
         "light-color": "#fdfdfd",
         "dark-color": "#353535",
+        "bg-blue" : "#553EAE",
       },
       boxShadow: {
         "custom-shadow": "15px 15px 0px 0px var(--primaryColor)",
