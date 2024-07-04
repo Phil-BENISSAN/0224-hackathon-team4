@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/Introduction.css";
+import Slider from "../components/Slider";
 
 function Introduction() {
   return (
@@ -10,7 +11,10 @@ function Introduction() {
         <span>accessibles</span> en un instant
       </h1>
       <h2>Comment ça marche ?</h2>
-      {/* slider ici */}
+      <div className="flex justify-center items-center">
+        <Slider />
+      </div>
+
       <Link to="/home" className="start-link">
         Commencer
       </Link>

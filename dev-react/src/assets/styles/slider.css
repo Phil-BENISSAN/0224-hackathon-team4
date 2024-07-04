@@ -1,0 +1,20 @@
+.swiper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24rem;
+    margin: 0;
+  }
+
+  .swiper-wrapper {
+    width: 21rem;
+  }
+
+  .swiper-slider {
+    width: 20rem;
+  }
+  
+ 
+  
+ 
