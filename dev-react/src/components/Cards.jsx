@@ -16,6 +16,7 @@ function Cards({item}) {
               <div>
             <h2 className="text-lg text-primary-color font-medium w-32 truncate">{item.name}</h2>
             </div>
+            <h2> {item.activite} </h2>
             <h3 className="text-sm text-primary-color">{item.adresse}</h3>
             <span className="flex gap-5">
             {item.entree_aide_humaine && <img src={noEar} alt="No Ear Accessibility" />}

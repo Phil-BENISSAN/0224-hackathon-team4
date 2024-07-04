@@ -1,20 +1,27 @@
-import { useLoaderData } from "react-router-dom";
-
+import { Link, useLoaderData } from "react-router-dom";
 import noEar from "../assets/images/img1.svg";
 import noVue from "../assets/images/img2.svg";
 import vieux from "../assets/images/old2.svg";
 import fauteuil from "../assets/images/physical-disability-01.svg";
 import signe from "../assets/images/img3.svg";
 import { Footer } from "../components/Footer";
+import arrow from "../assets/images/arrow.svg";
 
 function ShopDetails() {
   const shop = useLoaderData();
 
   return (
     <>
+    <Link to="/Home" className="">
+        <button type="button" className="m-5">
+          <img src={arrow} alt="fléche de retour en arrière" />
+        </button>
+      </Link>
+
+      <main className="flex flex-col items-center"></main>
     <main className="flex flex-col items-center m-10">
       <img
-        className="rounded-lg w-[22rem] h-[15rem] mt-24 object-cover"
+        className="rounded-lg w-[22rem] h-[15rem] object-cover"
         src={`${shop.url_image}`}
       ></img>
       <div>

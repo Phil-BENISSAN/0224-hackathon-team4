@@ -1,17 +1,25 @@
-function FilterButton( {handleClickNeed, handleClickShop} ) {
+function FilterButton({ handleClickNeed, handleClickShop, activeTab }) {
   return (
     <div className="flex justify-evenly items-center my-5">
       <button
         type="button"
-        className="border-2 border-primary-color rounded-md p-1 text-primary-color font-semibold w-32 focus:bg focus:bg-primary-color focus:text focus:text-white"
+        className={`border-2 border-primary-color rounded-md p-1 font-semibold w-32 ${
+          activeTab === 'shop'
+            ? 'bg-primary-color text-white'
+            : 'text-primary-color'
+        }`}
         onClick={handleClickShop}
-     >
+      >
         Établissements
       </button>
       <button
         onClick={handleClickNeed}
         type="button"
-        className="border-2 border-primary-color rounded-md p-1 text-primary-color font-semibold w-32 focus:bg focus:bg-primary-color focus:text focus:text-white"
+        className={`border-2 border-primary-color rounded-md p-1 font-semibold w-32 ${
+          activeTab === 'need'
+            ? 'bg-primary-color text-white'
+            : 'text-primary-color'
+        }`}
       >
         Besoins
       </button>
