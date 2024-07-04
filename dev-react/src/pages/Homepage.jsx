@@ -6,22 +6,26 @@ import dataset from "../../data.json";
 import SearchBar from "../components/SearchBar"
 import FilterButton from "../components/FilterButton"
 import Tags from "../components/Tags"
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 
 function Homepage() {
-  const [showCards, setShowCards] = useState(true);
+  const [activeTab, setActiveTab] = useState('shop');
 
   const handleClickShop = () => {
-    setShowCards(true);
+    setActiveTab('shop');
   };
 
   const handleClickNeed = () => {
-    setShowCards(false);
+    setActiveTab('need');
   };
+
+  useEffect(() => {
+    setActiveTab('shop');
+  }, []);
 
   const data = dataset.Sheet1 || [];
   const limitedData = data.slice(0, 20);
+
   return (
     <main>
       <section className="pb-[65vh]">
@@ -31,15 +35,20 @@ function Homepage() {
       <FilterButton
         handleClickNeed={handleClickNeed}
         handleClickShop={handleClickShop}
+        activeTab={activeTab} 
       />
       <section className="flex flex-col items-center bottom-10">
-      {showCards ? <section className="flex flex-col items-center gap-5">
-        {limitedData.map((item) => (
-          <Link to={`/shop/${item.id}`} key={item.id}>
-            <Cards item={item} />
-          </Link>
-        ))}
-      </section> : <Tags />}
+        {activeTab === 'shop' ? (
+          <section className="flex flex-col items-center gap-5">
+            {limitedData.map((item) => (
+              <Link to={`/shop/${item.id}`} key={item.id}>
+                <Cards item={item} />
+              </Link>
+            ))}
+          </section>
+        ) : (
+          <Tags />
+        )}
       </section>
       <Footer />
     </main>
