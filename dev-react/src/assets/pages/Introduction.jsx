@@ -1,8 +1,9 @@
-
 function Introduction() {
   return (
-    <div>Introduction</div>
-  )
+    <>
+      <div>Introduction</div>
+    </>
+  );
 }
 
-export default Introduction
+export default Introduction;
