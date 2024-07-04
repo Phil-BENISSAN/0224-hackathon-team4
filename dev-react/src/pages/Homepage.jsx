@@ -84,7 +84,7 @@ function Homepage() {
         activeTab={activeTab}
       />
       <section className="flex flex-col items-center bottom-10">
-        {activeTab === "shop" ? (
+        {activeTab === 'shop' ? (
           <section className="flex flex-col items-center">
             {filteredData.map((item) => (
               <Link to={`/shop/${item.id}`} key={item.id}>
