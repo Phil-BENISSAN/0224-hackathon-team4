@@ -1,10 +1,13 @@
-import MapComponent from '../components/MapComponent'
-
+import Cards from "../components/Cards";
+import MapComponent from "../components/MapComponent";
 
 function Homepage() {
-  return (
-<MapComponent/>
-  )
+  return <main>
+   <MapComponent />
+   <section className="flex flex-col">
+  <Cards/>
+  </section>
+  </main>
 }
 
-export default Homepage
+export default Homepage;
