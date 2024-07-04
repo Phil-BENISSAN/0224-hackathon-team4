@@ -25,6 +25,7 @@ const MapComponent = () => {
 
   return (
     <MapContainer
+      className="fixed"
       center={position}
       zoom={13}
       style={{ height: "60vh", width: "100%", margin: "auto auto 2rem auto" }}

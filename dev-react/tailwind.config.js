@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 import fluid, { extract } from "fluid-tailwind";
-import plugin from "tailwindcss/plugin";
 
 export default {
   content: {
@@ -24,11 +23,6 @@ export default {
   },
   plugins: [
     fluid,
-    plugin(({ addComponents }) => {
-      const components = {
-        
-      };
-      addComponents(components);
-    }),
+
   ],
 };
