@@ -4,11 +4,11 @@ import Slider from "../components/Slider";
 
 function Introduction() {
   return (
-    <main>
-      <h1>
+    <main className="introMain">
+      <h1 className="introH1">
         Avec <span>InclusiFind</span>
         <br /> Trouve des commerces <span>inclusifs</span> et{" "}
-        <span>accessibles</span> en un instant
+        <span className="introSpan">accessibles</span> en un instant
       </h1>
       <h2>Comment ça marche ?</h2>
       <div className="flex justify-center items-center">
